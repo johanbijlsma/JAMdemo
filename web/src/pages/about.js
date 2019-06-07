@@ -7,7 +7,7 @@ import PeopleGrid from '../components/people-grid'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
 import { mapEdgesToNodes, filterOutDocsWithoutSlugs } from '../lib/helpers'
-
+import spaceballs from './../images/spaceballs-jam.gif'
 import { responsiveTitle1 } from '../components/typography.module.css'
 
 export const query = graphql`
@@ -61,6 +61,9 @@ const AboutPage = props => {
       <Container>
         <h1 className={responsiveTitle1}>{page.title}</h1>
         <BlockContent blocks={page._rawBody || []} />
+        <div>
+          <img src={spaceballs} />
+        </div>
         {personNodes && personNodes.length > 0 && <PeopleGrid items={personNodes} title='People' />}
       </Container>
     </Layout>

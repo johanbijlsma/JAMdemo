@@ -16,6 +16,44 @@
   animation: fadeInImg 0.5s 0.5s ease-in-out forwards;
 }
 
+[class^='layout-module--content'] {
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(0, 128, 128, 0.3);
+  &:after {
+    content: '';
+    background-image: url(../images/jam.svg);
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: 35vw;
+    opacity: 0.2;
+    width: 200vw;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+.contactform {
+  margin: 1rem;
+  border-top: 2px solid #999;
+  padding: 1rem;
+  form {
+    background: #fff;
+  }
+  label {
+    display: block;
+    min-width: 200px;
+  }
+  form input {
+    display: block;
+    width: 100%;
+  }
+}
+
 @keyframes fadeInBlock {
   0% {
     color: rgba(255, 255, 255, 0);
@@ -41,26 +79,5 @@
   }
   100% {
     opacity: 1;
-  }
-}
-
-[class^='layout-module--content'] {
-  position: relative;
-  overflow: hidden;
-  background-color: rgba(0, 128, 128, 0.3);
-  &:after {
-    content: '';
-    background-image: url(../assets/jam.svg);
-    background-repeat: repeat;
-    background-position: center center;
-    background-size: 35vw;
-    opacity: 0.2;
-    width: 200vw;
-    height: 100%;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
   }
 }
