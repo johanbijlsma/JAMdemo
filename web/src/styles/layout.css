@@ -1,4 +1,5 @@
 @import './vars.css';
+@import './styles.scss';
 
 html {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -13,6 +14,9 @@ body {
   margin: 0;
 }
 
-html, body, body > div, body > div > div {
+html,
+body,
+body > div,
+body > div > div {
   height: 100%;
 }

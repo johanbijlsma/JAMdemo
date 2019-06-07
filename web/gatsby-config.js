@@ -6,7 +6,9 @@ const {
 module.exports = {
   plugins: [
     'gatsby-plugin-postcss',
+    'gatsby-plugin-sass',
     'gatsby-plugin-react-helmet',
+    'gatsby-image',
     {
       resolve: 'gatsby-source-sanity',
       options: {
